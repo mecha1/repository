@@ -1,0 +1,22 @@
+<project name="p2">
+	
+	<target name="publish" if="repositoryDir">
+		<p2.publish.featuresAndBundles repository="file://${basedir}/${repositoryDir}" repositoryName="${repositoryName}" compress="true">
+			<features dir="export/features"/>
+			<bundles dir="export/plugins"/>
+		</p2.publish.featuresAndBundles>
+	</target>
+	
+	<target name="publish-atom">
+		<property name="repositoryDir" value="atom"/>
+		<property name="repositoryName" value="Atom repository"/>
+		<antcall target="publish"/>
+	</target>
+
+	<target name="publish-thirdparty">
+		<property name="repositoryDir" value="thirdparty"/>
+		<property name="repositoryName" value="Third-party dependencies for Atom"/>
+		<antcall target="publish"/>
+	</target>
+
+</project>

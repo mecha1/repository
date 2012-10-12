@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.mecha1.atom.sdk_1.0.0.qualifier.jar" id="com.mecha1.atom.sdk" version="1.0.0.qualifier">
+      <category name="Atom"/>
+   </feature>
+   <feature url="features/com.mecha1.atom.mysql.feature_1.0.0.qualifier.jar" id="com.mecha1.atom.mysql.feature" version="1.0.0.qualifier">
+      <category name="Atom"/>
+   </feature>
+   <category-def name="Atom" label="Atom">
+      <description>
+         Language-oriented development tools
+      </description>
+   </category-def>
+</site>

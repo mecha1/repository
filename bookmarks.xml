@@ -3,6 +3,6 @@
    <site url="https://github.com/mecha1/repository/raw/master/atom" selected="true" name="Atom repository"/>
    <site url="https://github.com/mecha1/repository/raw/master/thirdparty" selected="true" name="Third-party dependencies for Atom"/>
    <site url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/milestones/" selected="true" name="Xtext All In One (Milestones)"/>
-   <site url="http://download.itemis.com/updates" selected="true" name="de.itemis.xtext.typesystem.updatesite"/>
-   <site url="http://download.itemis.com/xtext-typesystem/updates/releases" selected="true" name="de.itemis.xtext.typesystem.updatesite"/>
+   <site url="http://download.itemis.com/updates" selected="true" name=""/>
+   <site url="http://download.itemis.com/xtext-typesystem/updates/releases" selected="true" name=""/>
 </bookmarks>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='2'>
+  <unit id='201212122222.atom-extensions' version='1.0.0.78--cKD6c67UEMUMUMUUUUU'>
+    <properties size='2'>
+      <property name='org.eclipse.equinox.p2.name' value='Atom Extensions'/>
+      <property name='org.eclipse.equinox.p2.type.category' value='true'/>
+    </properties>
+    <provides size='1'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='201212122222.atom-extensions' version='1.0.0.78--cKD6c67UEMUMUMUUUUU'/>
+    </provides>
+    <requires size='4'>
+      <required namespace='org.eclipse.equinox.p2.iu' name='com.mecha1.atom.protobuf.feature.feature.group' range='[1.0.0.201212122222,1.0.0.201212122222]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='com.mecha1.atom.protobuf.source.feature.feature.group' range='[1.0.0.201212122222,1.0.0.201212122222]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='com.mecha1.atom.mysql.source.feature.feature.group' range='[1.0.0.201212122222,1.0.0.201212122222]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='com.mecha1.atom.mysql.feature.feature.group' range='[1.0.0.201212122222,1.0.0.201212122222]'/>
+    </requires>
+    <touchpoint id='null' version='0.0.0'/>
+  </unit>
+  <unit id='201212122222.atom' version='1.0.0.4--cKCs_h7E7AEAEAEEEEE'>
+    <properties size='3'>
+      <property name='org.eclipse.equinox.p2.name' value='Atom'/>
+      <property name='org.eclipse.equinox.p2.description' value='Language-oriented development tools'/>
+      <property name='org.eclipse.equinox.p2.type.category' value='true'/>
+    </properties>
+    <provides size='1'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='201212122222.atom' version='1.0.0.4--cKCs_h7E7AEAEAEEEEE'/>
+    </provides>
+    <requires size='2'>
+      <required namespace='org.eclipse.equinox.p2.iu' name='com.mecha1.atom.sdk.source.feature.group' range='[1.0.0.201212122222,1.0.0.201212122222]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='com.mecha1.atom.sdk.feature.group' range='[1.0.0.201212122222,1.0.0.201212122222]'/>
+    </requires>
+    <touchpoint id='null' version='0.0.0'/>
+  </unit>
+</units>

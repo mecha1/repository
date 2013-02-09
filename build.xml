@@ -18,5 +18,26 @@
 		<property name="repositoryName" value="Third-party dependencies for Atom"/>
 		<antcall target="publish"/>
 	</target>
+	
+	<target name="s3sync" if="repositoryDir">
+		<exec executable="s3cmd">
+			<arg value="sync" />
+			<arg value="${repositoryDir}/" />
+			<arg value="s3://www.mecha1.com/repository/${repositoryDir}/" />
+			<arg value="--delete-removed" />
+			<arg value="--verbose" />
+		</exec>
+	</target>
+	
+	<target name="s3sync-atom">
+		<property name="repositoryDir" value="atom"/>
+		<antcall target="s3sync"/>
+	</target>
+
+	<target name="s3sync-thirdparty">
+		<property name="repositoryDir" value="thirdparty"/>
+		<antcall target="s3sync"/>
+	</target>
+	
 
 </project>
